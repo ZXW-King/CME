@@ -249,7 +249,8 @@ def _do_python_eval(res_prefix, novel=False, output_dir = 'output'):
     # _devkit_path = '/data2/bykang/pytorch-yolo2/VOCdevkit'
     # _devkit_path = '/tmp_scratch/basilisk/bykang/datasets/VOCdevkit'
     #_devkit_path = '/root/database/Pascal_VOC/VOCdevkit'
-    _devkit_path = '/home/ubuntu/Dataset/VOC_Fewshot_Detection/VOCdevkit'
+    # _devkit_path = '/home/ubuntu/Dataset/VOC_Fewshot_Detection/VOCdevkit'
+    _devkit_path = '/media/xin/data1/data/Voc2012_2007/VOCdevkit'
     _year = '2007'
     _classes = ('__background__', # always index 0
         'aeroplane', 'bicycle', 'bird', 'boat',

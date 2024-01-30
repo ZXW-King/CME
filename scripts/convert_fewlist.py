@@ -6,12 +6,12 @@ from os import path
 
 parser = argparse.ArgumentParser()
 #parser.add_argument('--droot', type=str, default='/home/bykang/voc')
-parser.add_argument('--droot', type=str, default='/home/ubuntu/Dataset/VOC_Fewshot_Detection')
+parser.add_argument('--droot', type=str, default='/media/xin/data1/data/Voc2012_2007')
 args = parser.parse_args()
 
 args.droot = args.droot.rstrip('/')
 tgt_folder = path.join(args.droot, 'voclist')
-src_folder = 'data/vocsplit'
+src_folder = '/media/xin/work1/github_pro/CME/data/vocsplit'
 
 print('===> Converting few-shot name lists.. ')
 for name_list in sorted(os.listdir(src_folder)):
@@ -34,7 +34,7 @@ for fname in ['voc_traindict_full.txt',
               'voc_traindict_bbox_3shot.txt',
               'voc_traindict_bbox_5shot.txt',
               'voc_traindict_bbox_10shot.txt']: 
-    full_name = path.join('data', fname)
+    full_name = path.join('/media/xin/work1/github_pro/CME/data', fname)
     print('  | On ' + full_name)
     # Read lines
     with open(full_name, 'r') as f:
